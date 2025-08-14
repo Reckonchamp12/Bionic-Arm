@@ -38,7 +38,7 @@ python src/train.py --model transformer --epochs 20
 # 6) Evaluate + plots
 python src/evaluate.py
 
-# 7) (Optional) Run RL adaptive control demo
+# 7) Run RL adaptive control demo
 python src/rl_control.py --decoder_ckpt results/transformer_best.pt
 
 bionic_arm_control/
@@ -89,6 +89,33 @@ RL smoothing: reduces command jitter and increases smoothness reward vs. no-RL b
 Numbers above are on synthetic data; real-world metrics depend on electrode placement, impedance, subject fatigue, and calibration protocols.
 ```
 ```
+## Signal Examples
+
+### Multimodal Features
+![Signals](results/signals.png)
+
+### EMG Time–Frequency Analysis
+![EMG Spectrogram](results/spectrogram_emg.png0
+## Model Training Results
+
+### Training Curve
+![Training Curve](results/training_curve.png)
+
+### Confusion Matrix
+![Confusion Matrix](results/confusion_matrix.png)
+
+## Reinforcement Learning Results
+![RL Training Curve](results/rl_training_curve.png)
+
+## Metrics Summary
+```json
+{
+    "accuracy": 0.92,
+    "precision_macro": 0.91,
+    "recall_macro": 0.89,
+    "f1_macro": 0.90
+}
+
 How Labels Are Simulated
 
 Synthetic gestures/classes: {open, close, supinate, pronate, rest}.
