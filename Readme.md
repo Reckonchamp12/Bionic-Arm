@@ -40,3 +40,40 @@ python src/evaluate.py
 
 # 7) (Optional) Run RL adaptive control demo
 python src/rl_control.py --decoder_ckpt results/transformer_best.pt
+
+bionic_arm_control/
+│
+├─ README.md
+├─ requirements.txt
+├─ .gitignore
+│
+├─ data/
+│  ├─ raw/
+│  │  ├─ emg_sample.csv
+│  │  ├─ eeg_sample.csv
+│  │  └─ motion_sample.csv
+│  └─ processed/
+│     ├─ fused_signals.csv
+│     └─ windows.npz
+│
+├─ results/
+│  ├─ signals.png
+│  ├─ spectrogram_emg.png
+│  ├─ training_curve.png
+│  ├─ confusion_matrix.png
+│  ├─ metrics.json
+│  ├─ rl_training_curve.png
+│  └─ transformer_best.pt
+│
+└─ src/
+   ├─ __init__.py
+   ├─ generate_synthetic_data.py
+   ├─ preprocessing.py
+   ├─ datasets.py
+   ├─ models.py
+   ├─ fusion.py
+   ├─ train.py
+   ├─ evaluate.py
+   ├─ visualization.py
+   └─ rl_control.py
+
