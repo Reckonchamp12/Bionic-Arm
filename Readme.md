@@ -88,7 +88,6 @@ RL smoothing: reduces command jitter and increases smoothness reward vs. no-RL b
 
 Numbers above are on synthetic data; real-world metrics depend on electrode placement, impedance, subject fatigue, and calibration protocols.
 ```
-```
 ## Signal Examples
 
 ### Multimodal Features
@@ -96,6 +95,7 @@ Numbers above are on synthetic data; real-world metrics depend on electrode plac
 
 ### EMG Time–Frequency Analysis
 ![EMG Spectrogram](results/spectrogram_emg.png)
+
 ## Model Training Results
 
 ### Training Curve
@@ -116,8 +116,3 @@ Numbers above are on synthetic data; real-world metrics depend on electrode plac
     "f1_macro": 0.90
 }
 
-How Labels Are Simulated
-
-Synthetic gestures/classes: {open, close, supinate, pronate, rest}.
-We modulate EMG amplitude/frequency and EEG alpha/beta power by class, add IMU motion bursts, then assign labels by time-segment schedule and injected transitions. Windows inherit the majority class.
-```
