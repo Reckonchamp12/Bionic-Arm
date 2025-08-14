@@ -115,6 +115,7 @@ Numbers above are on synthetic data; real-world metrics depend on electrode plac
     "recall_macro": 0.89,
     "f1_macro": 0.90
 }
+```
 ## Acknowledgments
 - Dyne Research for providing access to proprietary neural signal datasets that inspired this project.
 - All datasets in this repository are synthetic and generated for demonstration purposes.
