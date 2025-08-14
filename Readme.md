@@ -95,7 +95,7 @@ Numbers above are on synthetic data; real-world metrics depend on electrode plac
 ![Signals](results/signals.png)
 
 ### EMG Time–Frequency Analysis
-![EMG Spectrogram](results/spectrogram_emg.png0
+![EMG Spectrogram](results/spectrogram_emg.png)
 ## Model Training Results
 
 ### Training Curve
